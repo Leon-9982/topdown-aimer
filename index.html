@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Aim Trainer</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #controlPanel {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controlPanel">
+        <button onclick="setFOV(1)">1x</button>
+        <button onclick="setFOV(2)">2x</button>
+        <button onclick="setFOV(4)">4x</button>
+        <button onclick="setFOV(8)">8x</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
