@@ -146,7 +146,7 @@ function draw() {
     ctx.save();
 
     // Apply zoom and center the view on the player
-    ctx.scale(1 / (fov/2), 1 / fov);
+    ctx.scale(1 / (fov*2), 1 / fov);
     ctx.translate((canvas.width / 2) * fov - player.x, (canvas.height / 2) * fov - player.y);
 
     // Draw grid
