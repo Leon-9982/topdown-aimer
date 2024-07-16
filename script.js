@@ -35,7 +35,7 @@ function shoot(event) {
     if (currentTime - lastFireTime >= player.fireDelay) {
         const bulletStartX = player.x + (player.size + player.gunLength) * Math.cos(mouseAngle);
         const bulletStartY = player.y + (player.size + player.gunLength) * Math.sin(mouseAngle);
-        bullets.push({ x: bulletStartX, y: bulletStartY, angle: mouseAngle, speed: 30 });
+        bullets.push({ x: bulletStartX, y: bulletStartY, angle: mouseAngle, speed: 70 });
         totalShots++;
         lastFireTime = currentTime;
     }
