@@ -23,8 +23,8 @@ const targetChangeInterval = 1000; // Change direction every second
 const bulletDamage = 50;
 const headshotDamage = 150;
 const headshotChance = 0.1; // 10% chance of a headshot
-const tracerColor = 'rgba(255, 255, 255, 0.5)'; // Lighter color for bullet tracers
-const tracerLength = 10; // Length of bullet tracers
+const tracerColor = 'rgba(235, 26, 50)'; // Lighter color for bullet tracers
+const tracerLength = 120; // Length of bullet tracers
 const dodgeSpeed = 1; // Speed at which the target dodges bullets
 const wallThickness = 10; // Thickness of the arena wall
 
@@ -43,7 +43,7 @@ function shoot(event) {
     if (currentTime - lastFireTime >= player.fireDelay) {
         const bulletStartX = player.x + (player.size + player.gunLength) * Math.cos(mouseAngle);
         const bulletStartY = player.y + (player.size + player.gunLength) * Math.sin(mouseAngle);
-        bullets.push({ x: bulletStartX, y: bulletStartY, angle: mouseAngle, speed: 30, tracerLength: tracerLength });
+        bullets.push({ x: bulletStartX, y: bulletStartY, angle: mouseAngle, speed: 45, tracerLength: tracerLength });
         totalShots++;
         lastFireTime = currentTime;
     }
